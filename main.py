@@ -27,8 +27,10 @@ while isBidding:
     bidders(bidder_name=name, bid_amt=bid)
     
     user_add = input("Are there any other bidders? Type 'yes or 'no'.\n").lower()
-    clear()
+
     if user_add == "no":
         isBidding = False
+    elif user_add == "yes":
+        clear()
     
 bid_winner()
